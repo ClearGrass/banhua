@@ -1,0 +1,70 @@
+body.detail {
+    background: #212121;
+}
+.content {
+    min-width: 1200px;
+    max-width: 1720px;
+    margin: 0 auto;
+    width: 90%;
+    background: #fff;
+}
+.c-inner {
+    padding: 56px 15% 120px;
+    color: #212121;
+}
+.n-name {
+    font-size: 20px;
+    color: #000;
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.new-from {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+.img-wrap {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.img-wrap img {
+    max-width: 1200px;
+}
+.con {
+    font-size: 14px;
+    color: #333;
+    line-height: 2;
+}
+.con p {
+    text-indent: 40px;
+}
+.inner2 {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0 50px;
+}
+.page-wrap {
+    text-align: center;
+}
+.go-back {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    color: #fff;
+}
+a.go-back:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.go-back i {
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background: url(../img/left-arrow.png) no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./img/favicon.png"/>
+    <title>版画 | 安徽文交中心</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/load.js"></script>
+</head>
+<body>
+<div class="home-panel">
+    <div class="wrap">
+        <div data-load="header.html"></div>
+
+        <div class="container">
+            <div class="banner">
+                <div class="banner-show">
+                    <ul id="back" class="back">
+                        <li class="curr" style="background-image: url(img/background1.jpg);"></li>
+                        <li style="background-image: url(img/background2.jpg);"></li>
+                        <li style="background-image: url(img/background3.jpg);"></li>
+                    </ul>
+                    <ul id="frame" class="picture">
+                        <li class="curr" style="background-image: url(img/Frame_01.png);"></li>
+                        <li style="background-image: url(img/Frame_02.png);"></li>
+                        <li style="background-image: url(img/Frame_03.png);"></li>
+                        <li style="background-image: url(img/Frame_04.png);"></li>
+                        <li style="background-image: url(img/Frame_05.png);"></li>
+                    </ul>
+                </div>
+                <div class="banner-list cf">
+                    <div class="p-inner">
+                        <div id="back-list" class="back-list">
+                            <a href="javascript:;" class="curr" data-role="1">
+                                <img src="img/minibackground1.png" alt=""/>
+                            </a>
+                            <a href="javascript:;" class="" data-role="2">
+                                <img src="img/minibackground2.png" alt=""/>
+                            </a>
+                            <a href="javascript:;" class="" data-role="3">
+                                <img src="img/minibackground3.png" alt=""/>
+                            </a>
+                        </div>
+                        <div id="frame-list" class="frame-list">
+                            <a href="javascript:;" class="curr" data-role="1">
+                                <img src="img/miniFrame_01.png" alt=""/>
+                            </a>
+                            <a href="javascript:;" class="" data-role="2">
+                                <img src="img/miniFrame_02.png" alt=""/>
+                            </a>
+                            <a href="javascript:;" class="" data-role="3">
+                                <img src="img/miniFrame_03.png" alt=""/>
+                            </a>
+                            <a href="javascript:;" class="" data-role="4">
+                                <img src="img/miniFrame_04.png" alt=""/>
+                            </a>
+                            <a href="javascript:;" class="" data-role="5">
+                                <img src="img/miniFrame_05.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-1"></div>
+            <img src="./img/index-p3.jpg" class="page-add" />
+            <!--<div class="page-add"></div>-->
+            <div class="page-2">
+                <div class="t-1">版画展示图册（非作品本身）京东售价2080元</div>
+                <div class="t-2">*上图中京东所售商品仅为展示图册，并非原作。</div>
+            </div>
+            <div class="page-3">
+                <div class="head">
+                    <div class="t-1">陈老莲绘明张深之正北西厢秘本</div>
+                    <!--<div class="label-1">国家级非遗传人 雕版 陈义时 印刷 李江民    市场估值12000元</div>-->
+                </div>
+                <div class="label-2">
+                    <p>
+                        <i>雕版</i>
+                        <span>陈义时</span>
+                        <i class="t-1">印刷</i>
+                        <span>李江民</span>
+                    </p>
+                    <p class="tc"><span  class="leftF">国家级非遗传人</span><span class="rightF">市场估值12000元</span></p>
+
+                </div>
+                <div class="img-show">
+                    <img src="img/print.jpg" height="556" alt=""/>
+                </div>
+            </div>
+            <div class="page-4">
+                <div class="con">
+                    陈老莲（1598—1652）所画《张深之正北西厢秘本插图》，是中国古代版画史上最具艺术性的代表作品。以其灵动的空间，线条的张弛，产生的韵律生动，给人带来无限遐想。
+                </div>
+                <div class="con">
+                    木版画在中国有悠久辉煌的历史。明末清初随着通俗演义小说的普遍流通，书籍中的插图版画艺术有了突飞猛进的发展，其中江南的木版画制作形成建安派、金陵派和新安派三大流派。 新安派的代表人物陈老莲创作的《张深之正北西厢秘本插图》，第一幅为《莺莺像》，其余直接描绘原作内容有《目成》、《解围》、《窥简》、《惊梦》和《报捷》五幅，出色表现出了陈老莲高超的艺术造诣，完美的诠释了张本西厢的故事内涵，被公认为是代表当时小说插图艺术的最高成就。
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+
+
+            function View(opt) {
+                this.tab = opt.tab;
+                this.list = opt.list;
+                this.time = opt.time || 4000;
+                this.init();
+            }
+            View.prototype.init = function () {
+                this.length = this.list.children().length;
+                this.playFlag = false;
+                this.index = 0;
+                this.change();
+            };
+
+            View.prototype.change = function () {
+                var self = this;
+                self.tab.children().on('click', function () {
+                    self.index = $(this).index();
+                    doChange();
+                });
+
+//        self.list.on('mouseover', function () {
+//            clearInterval(self.playFlag);
+//        }).on('mouseout', function () {
+//            autoPlay();
+//        });
+                self.tab.on('mouseover', function () {
+                    clearInterval(self.playFlag);
+                }).on('mouseout', function () {
+                    autoPlay();
+                });
+
+                function autoPlay() {
+                    self.playFlag = setInterval(function () {
+                        self.index++;
+                        self.index = self.index >= self.length ? 0 : self.index;
+                        doChange();
+                    }, self.time);
+                }
+
+                autoPlay();
+
+                function doChange () {
+                    self.tab.children(':eq(' + self.index + ')').addClass('curr').siblings().removeClass('curr');
+                    self.list.children(':eq(' + self.index + ')').addClass('curr').siblings().removeClass('curr');
+                }
+            };
+
+            new View({
+                tab: $('#back-list'),
+                list: $('#back'),
+                time: 6000
+            });
+            new View({
+                tab: $('#frame-list'),
+                list: $('#frame'),
+                time: 3500
+            });
+        </script>
+
+        <div data-load="footer.html"></div>
+    </div>
+</div>
+
+</body>
+</html>

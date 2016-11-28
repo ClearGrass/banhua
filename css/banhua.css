@@ -1,0 +1,48 @@
+body.banhua {
+    background: #212121;
+}
+.container {
+
+}
+.content {
+    margin: 0 auto;
+    width: 850px;
+    background: #fff;
+}
+.c-inner {
+    padding: 36px 15% 80px;
+    color: #212121;
+}
+.inner2 {
+    padding: 80px 15% 40px;
+}
+.content h1 {
+    margin: 0 0 30px;
+    font-size: 30px;
+}
+.content h2 {
+    margin: 0 0 30px;
+    font-size: 20px;
+}
+.content .con {
+    font-size: 14px;
+    line-height: 2;
+}
+.content .con p {
+  margin:10px 0 0 0;
+}
+.content img {
+    display: block;
+    margin: 35px auto;
+    width: 100%;
+}
+.page-wrap {
+    float: left;
+}
+.select-wrap {
+    float: right;
+}
+.content .tc {
+    padding: 0 0 40px;
+    text-align: center;
+}

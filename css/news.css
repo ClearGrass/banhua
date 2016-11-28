@@ -1,0 +1,47 @@
+body.news {
+    background: #212121;
+}
+.container {
+    margin: 15px auto;
+    width: 850px;
+}
+.news-list {
+
+}
+.news-list li {
+    margin-bottom: 40px;
+}
+.news-list .source {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.news-list .pic {
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+.news-list .pic img {
+    width: 150px;
+    height: 150px;
+}
+.news-list .info {
+    margin-left: 175px;
+    font-size: 175px;
+}
+.news-list .name {
+    font-size: 20px;
+    line-height: 30px;
+    margin: -6px 0 5px;
+}
+.news-list .name a {
+    color: #fff;
+}
+.news-list .n-txt {
+    font-size: 14px;
+}
+.news-list .n-txt a{
+    font-size: 14px;
+    color: #ffffff;
+}
+

@@ -1,0 +1,143 @@
+.p-inner,
+.p-inner2 {
+    width: 850px;
+    margin: 0 auto;
+}
+.p-inner2 {
+    width:960px;
+}
+.header {
+    background: #212121;
+}
+.logo-part {
+    padding: 20px 0 0 0;
+}
+.logo {
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    background: url(../img/logo.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+.header .p-txt {
+    float: right;
+    color: #fff;
+    text-align: right;
+    cursor: pointer;
+}
+.header .p-txt .t-m {
+    font-size: 30px;
+    line-height: 36px;
+}
+.header .p-txt .t-s {
+    font-size: 14px;
+    padding-top: 5px;
+}
+.header .nav-list {
+    padding: 20px 0;
+}
+.nav-list .n-item {
+    display: inline-block;
+    width: 70px;
+    line-height: 70px;
+    margin: 0 20px 0 0;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50%;
+    text-align: center;
+}
+.nav-list .n-item:hover,
+.nav-list .curr {
+    background: #bf360c;
+}
+.footer {
+    padding: 100px 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    background: #212121;
+}
+.footer p{
+    color: #ffffff;
+}
+.page-wrap {
+    color: #fff;
+    font-size: 14px;
+}
+.page-wrap .page-prev,
+.page-wrap .page-next {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+.page-prev {
+    background: url(../img/page-prev.png) no-repeat;
+    background-size: contain;
+}
+.page-next {
+    background: url(../img/page-next.png) no-repeat;
+    background-size: contain;
+}
+.page-wrap em {
+    margin: 0 10px;
+}
+.page-wrap input {
+    width: 60px;
+    line-height: 24px;
+    background: none;
+    border: 1px solid #fff;
+    text-align: center;
+    color: #ffffff;
+}
+.select-wrap {
+    position: relative;
+    width: 218px;
+    height: 30px;
+}
+.select-wrap .select {
+    line-height: 30px;
+    font-size: 14px;
+    color: #bf360c;
+    text-align: center;
+    background: #fff;
+}
+.select-wrap .selects {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 310px;
+}
+.select-wrap:hover .selects {
+    display: block;
+}
+.select-wrap .arrow {
+    display: block;
+    width: 45px;
+    height: 20px;
+    margin-left: 86px;
+    background: url(../img/ico-arrow2.png) no-repeat;
+}
+.select-wrap .select-list {
+    width: 218px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+.select-wrap li a {
+    display: block;
+    padding: 8px 10px;
+    line-height: 24px;
+    font-size: 20px;
+    color: #333;
+}
+.select-wrap li a:hover,
+.select-wrap li.curr a {
+    color: #bf360c;
+}
+
+
+
+
