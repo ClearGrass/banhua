@@ -30,7 +30,8 @@ $(function(){
              'news_02': 3,
              'news_03': 3,
              'news_04': 3,
-             'news_05': 3
+             'news_05': 3,
+             'news_06': 3
         };
         var loc = window.location.href;
         for (var key in arr) {
