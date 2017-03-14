@@ -27,12 +27,13 @@ $(function(){
             'news': 3,
             'newdetail': 3,
             'news_01': 3,
-             'news_02': 3,
-             'news_03': 3,
-             'news_04': 3,
-             'news_05': 3,
-             'news_06': 3,
-             'news_07': 3
+            'news_02': 3,
+            'news_03': 3,
+            'news_04': 3,
+            'news_05': 3,
+            'news_06': 3,
+            'news_07': 3,
+            'news_08': 3
         };
         var loc = window.location.href;
         for (var key in arr) {
